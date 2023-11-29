@@ -3,6 +3,16 @@
 :root {
   --font-size-home: 14px;
   --font-size-details: 18px;
+  --box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 2px 3px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body[theme='light'] {
@@ -22,4 +32,15 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: 'Nunino Sans', sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main {
+  padding-top: 80px;
 }
