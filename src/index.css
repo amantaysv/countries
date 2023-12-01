@@ -5,6 +5,7 @@
   --font-size-details: 18px;
   --box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 2px 3px 0px,
     rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  --border-radius: 0.25rem;
 }
 
 *,
@@ -17,14 +18,14 @@
 
 body[theme='light'] {
   --color-input: hsl(0, 0%, 52%);
-  --color-elements: hsl(0, 0%, 100%);
-  --color-text: hsl(200, 15%, 8%);
+  --color-elements: #ffffff;
+  --color-text: #121517;
   --color-background: hsl(0, 0%, 98%);
 }
 
 body[theme='dark'] {
   --color-elements: hsl(209, 23%, 22%);
-  --color-text: hsl(0, 0%, 100%);
+  --color-text: #ffffff;
   --color-background: hsl(207, 26%, 17%);
 }
 
