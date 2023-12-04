@@ -1,11 +1,17 @@
+import { useNavigate } from 'react-router-dom'
 import { CountryProps } from '../../interfaces/CountryProps'
 import s from './Card.module.scss'
 
 type CardProps = CountryProps
 
 export const Card = (props: CardProps) => {
+  const navigate = useNavigate()
+
+  const onClick = () => {
+    navigate(`/country/${props.cca3}`)
+  }
   return (
-    <div className={s.card}>
+    <div className={s.card} onClick={onClick}>
       <img src={props.flags.svg} alt='' />
       <div className={s.content}>
         <h2>{props.name.common}</h2>

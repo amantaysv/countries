@@ -2,26 +2,18 @@
   position: relative;
   max-width: 180px;
   width: 100%;
-
-  option {
-    background-color: red;
-    height: 40px;
-  }
+  height: 60px;
 
   &Button {
     width: 100%;
-    background-color: var(--color-elements);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    height: 40px;
-    padding: 0 1.25rem;
-    color: inherit;
-    border-radius: var(--border-radius);
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1.25rem;
+    background-color: var(--color-elements);
     box-shadow: var(--box-shadow);
+
     svg {
       font-size: 1rem;
     }
@@ -49,12 +41,11 @@
 
     button {
       position: relative;
+      height: 40px;
       background-color: transparent;
-      border: none;
-      outline: none;
       padding: 0.5rem 1.25rem;
       text-align: start;
-      color: inherit;
+
       &:hover::before {
         content: '';
         position: absolute;

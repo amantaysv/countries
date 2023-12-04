@@ -1,0 +1,12 @@
+.backButton {
+  height: 45px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0 4rem;
+  background-color: var(--color-elements);
+  box-shadow: var(--box-shadow);
+  font-size: var(--font-size-details);
+}

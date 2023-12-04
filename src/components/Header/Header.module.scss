@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.25rem 0;
   background-color: var(--color-elements);
   box-shadow: var(--box-shadow);
 
@@ -11,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: var(--size-header-height);
   }
 
   h1 {
@@ -18,14 +18,9 @@
   }
 
   button {
-    border: none;
-    outline: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     background-color: transparent;
-    color: inherit;
-    cursor: pointer;
-    font-size: var(--font-size-home);
   }
 }

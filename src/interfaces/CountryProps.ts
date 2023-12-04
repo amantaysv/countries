@@ -1,4 +1,5 @@
 export interface CountryProps {
+  cca3: string
   flags: {
     png: string
     svg: string

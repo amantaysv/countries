@@ -37,8 +37,6 @@ const regions = [
   },
 ]
 
-const defaultFilterState = 'Filter by Region'
-
 export const Filter = () => {
   const { region, setRegion } = useCountries()
 
@@ -55,14 +53,14 @@ export const Filter = () => {
 
   const resetFilter = (e: React.MouseEvent<HTMLSpanElement>) => {
     e.stopPropagation()
-    setRegion(defaultFilterState)
+    setRegion('')
   }
 
   return (
     <div className={s.filter}>
       <button className={s.filterButton} onClick={handleOpen}>
-        {region}
-        {region !== defaultFilterState && (
+        {region !== '' ? region : 'Filter by Region'}
+        {region !== '' && (
           <span onClick={resetFilter}>
             <IoMdClose />
           </span>

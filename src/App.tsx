@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route path='/' element={<HomePage />} />
-        <Route path='/detail:country' element={<CountryDetailsPage />} />
+        <Route path='/country/:countryName' element={<CountryDetailsPage />} />
         <Route path='/404' element={<NotFoundPage />} />
         <Route path='/error-page' element={<ErrorPage />} />
         <Route path='/*' element={<Navigate to='/404' />} />

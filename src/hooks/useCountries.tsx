@@ -2,7 +2,7 @@ import axios from 'axios'
 import { create } from 'zustand'
 import { CountryProps } from '../interfaces/CountryProps'
 
-const url = 'https://restcountries.com/v3.1/all?fields=name,capital,population,flags,region'
+const url = 'https://restcountries.com/v3.1/all?fields=name,capital,population,flags,region,cca3'
 
 interface CountriesState {
   countries: CountryProps[]
