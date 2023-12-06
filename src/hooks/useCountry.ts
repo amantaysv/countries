@@ -50,11 +50,12 @@ export const useCountry = create<CountryState & CountryActions>((set) => ({
   error: null,
 
   getCountry: async (code) => {
+    set({ loading: true })
     try {
       const res = await axios.get(`https://restcountries.com/v3.1/alpha/${code}`)
       const data = await res.data[0]
 
-      set({ countryInfo: data })
+      set({ countryInfo: data, loading: false })
     } catch (error) {
       console.error(error)
     }

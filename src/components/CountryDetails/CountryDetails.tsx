@@ -8,7 +8,6 @@ export const CountryDetails = () => {
   const nativeName = Object.values(countryInfo?.name?.nativeName || {})[0].common
   const currencies = Object.values(countryInfo?.currencies || {})[0]
   const languages = Object.values(countryInfo?.languages || {})
-  console.log('CountryDetails ~ nativeName:', nativeName)
 
   return (
     <div className={s.countryDetails}>

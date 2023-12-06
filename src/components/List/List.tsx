@@ -3,6 +3,7 @@ import { useCountries } from '../../hooks/useCountries'
 
 import { Navigate } from 'react-router-dom'
 import { Card } from '../Card/Card'
+import { CardSkeleton } from '../Card/CardSkeleton'
 import s from './List.module.scss'
 
 export const List = () => {
@@ -12,7 +13,14 @@ export const List = () => {
     getCountries()
   }, [])
 
-  if (loading) return <div>loading...</div>
+  if (loading)
+    return (
+      <div className={s.list}>
+        {new Array(12).fill(null).map((_, index) => (
+          <CardSkeleton key={index} />
+        ))}
+      </div>
+    )
   if (error) return <Navigate to='/error-page' />
 
   return (

@@ -12,7 +12,7 @@ export const Card = (props: CardProps) => {
   }
   return (
     <div className={s.card} onClick={onClick}>
-      <img src={props.flags.svg} alt='' />
+      <img src={props.flags.svg} alt={props.name.common} loading='lazy' />
       <div className={s.content}>
         <h2>{props.name.common}</h2>
         <ul>

@@ -5,13 +5,13 @@
   column-gap: 6rem;
   row-gap: 3rem;
 
-  & > div {
+  & > * {
     flex: 1;
   }
 
   @media (width < 576px) {
     flex-direction: column;
-    & > div {
+    & > * {
       width: 100%;
     }
   }

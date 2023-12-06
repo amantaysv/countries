@@ -70,3 +70,7 @@ img {
 ul {
   list-style: none;
 }
+
+.rect {
+  height: 40px;
+}
