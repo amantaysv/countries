@@ -8,7 +8,6 @@ import styles from './Header.module.scss'
 export const Header = () => {
   const [darkMode, setDarkMode] = useState(false)
 
-  console.log('Header ~ darkMode:', darkMode)
   const darkModeHandle = () => {
     setDarkMode(!darkMode)
   }

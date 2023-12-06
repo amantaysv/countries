@@ -13,8 +13,7 @@ export const Search = () => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setError(false)
     const matches = e.target.value.match(regex)
-    console.log('handleChange ~ matches:', matches)
-    // if (matches) return setError(true)
+    if (matches) return setError(true)
 
     setSearch(e.currentTarget.value)
   }

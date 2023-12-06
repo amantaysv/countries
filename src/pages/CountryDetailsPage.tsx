@@ -7,10 +7,8 @@ import { useCountry } from '../hooks/useCountry'
 
 export const CountryDetailsPage = () => {
   const { countryName } = useParams()
-  console.log('CountryDetailsPage ~ countryName:', countryName)
 
   const { countryInfo, getCountry, loading } = useCountry()
-  console.log('CountryDetailsPage ~ countryInfo:', countryInfo)
 
   useEffect(() => {
     getCountry(countryName)
